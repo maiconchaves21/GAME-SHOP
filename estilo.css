@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
@@ -22,13 +22,16 @@ nav ul {
 
 nav li {
     display: inline; 
-    margin-right: 20px;
+    margin: 0 10px;
+    padding: 5px 15px;
+    transition: transform 0.2;
 } 
 
 nav li:hover{
     background-color: #284c55;
     border-radius: 10px;
     padding: 6px;
+    transform: scale(1.2);
 }
 
 nav a {
@@ -68,10 +71,12 @@ main {
     cursor: pointer; 
     transition: background-color 0.3s ease;
     border-radius: 15px;
+    transition: transform 0.2s;
 }
 
 .card button:hover {
     background-color: #206b2c; 
+    transform: scale(1.2);
 }
 
 footer {
