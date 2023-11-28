@@ -27,8 +27,3 @@ function enviarEmail(nome, email, cpf, telefone, cep) {
     console.log('Enviando e-mail para:', email);
 }
 
-function registrarVenda() {
-    var totalVendas = localStorage.getItem('totalVendas') || 0;
-    totalVendas = parseFloat(totalVendas) + 1;
-    localStorage.setItem('totalVendas', totalVendas);
-}

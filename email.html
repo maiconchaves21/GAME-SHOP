@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Título</title>
+        <script>
+            //chamar no evento onsubmit do form
+            function validarEmail() {
+                var email = document.getElementById("idEmail").value
+                if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                    alert("Email inválido")
+                    return false
+                }else{
+                    return true
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Está com dúvidas?
+        <a href="mailto:email@provedor.com.br?
+            &subject=Assunto do email
+            &cc=copia@provedor.com.br
+            &bcc=copiaoculta@provedor.com.br
+            &body=Olá galera!">Enviar email
+        </a><br>
+        <a href="https://wa.me/5548999999999?
+            text=mensagem%20de%20hoje">
+            WhatsApp
+        </a><br>
+        <form id="idForm" onsubmit="return validarEmail()"
+            action="https://app.headlessforms.cloud/api/v1/form-submission/n9ldxUUg6X"
+            method="POST">
+            E-mail:
+            <input 
+                placeholder="nada@nada.com" 
+                title="Um email válido!" 
+                type="email" name="email"
+                id="idEmail" required><br>
+            Nome:
+            <input type="text"
+                minlength="5" maxlength="12"
+                pattern="[a-z]{5,12}"
+                name="nome" id="idNome" required><br>
+            <textarea rows="3" cols="25" 
+                name="corpo" placeholder="O texto do seu e-mail." required></textarea><br>
+            CPF:<input type="text"
+                pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                name="cpf" id="idCPF" required><br>                
+            <input type="submit" value="Enviar" />
+        </form>
+            
+</a>
+
+    </body>
+</html>
