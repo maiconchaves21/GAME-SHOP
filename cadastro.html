@@ -22,8 +22,12 @@
     <div class="container">
         <h1>Cadastro</h1>
         <form id="checkoutForm">
+            <form id="meuForm" 
+            action="http://jkorpela.fi/cgi-bin/echo.cgi" 
+            method="post">
+
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Meu Nome" required>
+            <input type="text" id="nome" placeholder="Nome Completo" required>
             <br>
             <label for="email">Email:</label>
             <input type="text" id="email" placeholder="nada@nada.com" required>
@@ -32,12 +36,12 @@
             <input type="text" id="cpf" placeholder="123.456.789-01" required>
             <br>
             <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" placeholder="1234567890" required>
+            <input type="text" id="telefone" placeholder="(12)345698701" required>
             <br>
             <label for="cep">CEP:</label>
             <input type="text" id="cep" placeholder="12345-678" required>
             <br>
-            <button type="button" onclick="validarCompra()"><a href="index.html">Finalizar Compra</a></button>
+            <button type="button" onclick="validarCompra()"><a href="index.html">Compra</a></button>
         </form>
     </div>
 
