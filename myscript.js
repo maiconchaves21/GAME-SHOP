@@ -1,4 +1,4 @@
-function validarCompra() {
+function validar() {
 
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
