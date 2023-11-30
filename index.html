@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="gameshop.png">   
     <title>GAME SHOP</title>
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
@@ -14,66 +16,63 @@
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="https://wa.me/qr/ZNVGCGH2CVTEP1">Suporte</a></li>
-                <li><a href="validar.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section class="cards">
-            <div class="card">
-                <img src="img/mine.jpg" alt="Jogo 1">
+            <center>
+            <div id="card">
+                <img src="img/mine.jpg" alt="Jogo 1" height="200">
                 <h2>Minecraft Completo</h2><br>
                 <p><strong>R$50,00</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
+                <button onclick="adicionarAoCarrinho('Minecraft Completo', 50.00)">Comprar</button>
             </div>
 
-            <div class="card">
-                <img src="img/terraria.jpg" alt="Jogo 2">
+            <div id="card">
+                <img src="img/terraria.jpg" alt="Jogo 2" height="200">
                 <h2>Terraria</h2><br>
                 <p><strong>R$20,00</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
+                <button onclick="adicionarAoCarrinho('Terraria', 20.00)">Comprar</button>
             </div>
 
-            <div class="card">
-                <img src="img/battlefield1.png" alt="Jogo 3">
+            <div id="card">
+                <img src="img/battlefield1.png" alt="Jogo 3" height="200">
                 <h2>Battlefield 1 (PS4)</h2><br>
                 <p><strong>R$60,00</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
+                <button onclick="adicionarAoCarrinho('Battlefied 1', 60.00)">Comprar</button>
             </div>
+        </center>
         </section>
     </main>
+            </ul>
+            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+          </div>
 
-    <main>
-        <section class="cards">
-            <div class="card">
-                <img src="img/fifa24.jpg" alt="Jogo 4">
-                <h2>EA Sports FC 24 </h2><br>
-                <p><strong>R$179,90</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
-            </div>
-
-            <div class="card">
-                <img src="img/codmw1.jpg" alt="Jogo 5">
-                <h2>Call of Duty MW1</h2><br>
-                <p><strong>R$225,00</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
-            </div>
-
-            <div class="card">
-                <img src="img/mineiro.png" alt="Jogo 6">
-                <h2>Mineirinho Adventures (Xbox One)</h2><br>
-                <p><strong>R$4,50</strong></p><br>
-                <button><strong><a href="validar.html">Comprar</a></strong></button>
-            </div>
-        </section>
-
-
+        <form id="checkoutForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <center>
+                <fieldset style="width:230px">
+                    <legend>Validação</legend>
+                    <input type="text" id="idNome" name="nome" placeholder="Fulano">
+                    <input type="text" id="idEmail" name="email" placeholder="fulano@nada.com">
+                    <input type="text" id="idCpf" name="cpf" placeholder="123.456.789-11">
+                    <input type="text" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
+                    <input type="text" id="idCep" name="cep" placeholder="12345-678">
+                    <input type="button" value="Enviar" onclick="validarCompra();">
+                </fieldset>
+            </center>
+        </form>
     </main>
-
+    <center>
+    <div id="carrinho-container">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+      
     <footer>
-        <p><strong>&copy; 2023 GAME SHOP | Criado por Maicon,Arthur e Lucas Alonso.</strong></p>
+        <p><strong>&copy; 2023 GAME SHOP | Criado por Maicon, Arthur e Lucas Alonso.</strong></p>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>
