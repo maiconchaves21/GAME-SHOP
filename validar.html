@@ -73,23 +73,22 @@ return
             </ul>
         </nav>
     </header>
-    <form id="formTrabalho" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
-        <center>
-            <fieldset style="width:230px">
-                <legend>Validação</legend>
-                <input type="text" id="idNome" name="nome" placeholder="Fulano">
-                <input type="text" id="idEmail" name="email" placeholder="fulano@nada.com">
-                <input type="text" id="idCpf" name="cpf" placeholder="123.456.789-11">
-                <input type="text" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
-                <input type="text" id="idCep" name="cep" placeholder="12345-678">
-                <input type="button" value="Enviar" onclick="enviar();">
-            </fieldset>
-        </center>
-    </form>
+        <form id="checkoutForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <center>
+                <fieldset style="width:230px">
+                    <legend>Validação</legend>
+                    <input type="text" id="idNome" name="nome" placeholder="Fulano">
+                    <input type="text" id="idEmail" name="email" placeholder="fulano@nada.com">
+                    <input type="text" id="idCpf" name="cpf" placeholder="123.456.789-11">
+                    <input type="text" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
+                    <input type="text" id="idCep" name="cep" placeholder="12345-678">
+                    <input type="button" value="Enviar" onclick="validarCompra();">
+                </fieldset>
+            </center>
+        </form>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer>
         <p><strong>&copy; 2023 GAME SHOP | Criado por Maicon,Arthur e Lucas Alonso.</strong></p>
     </footer>
 </body>
-<script src="myscript.js"></script>
 </html>

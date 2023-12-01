@@ -21,16 +21,15 @@
     </header>
     
     <main>
-        <section class="cards">
             <center>
-            <div id="card">
+            <div>
                 <img src="img/mine.jpg" alt="Jogo 1" height="200">
                 <h2>Minecraft Completo</h2><br>
                 <p><strong>R$50,00</strong></p><br>
                 <button onclick="adicionarAoCarrinho('Minecraft Completo', 50.00)">Comprar</button>
             </div>
 
-            <div id="card">
+            <div>
                 <img src="img/terraria.jpg" alt="Jogo 2" height="200">
                 <h2>Terraria</h2><br>
                 <p><strong>R$20,00</strong></p><br>
@@ -44,33 +43,16 @@
                 <button onclick="adicionarAoCarrinho('Battlefied 1', 60.00)">Comprar</button>
             </div>
         </center>
-        </section>
-    </main>
-            </ul>
-            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
-          </div>
-
-        <form id="checkoutForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
-            <center>
-                <fieldset style="width:230px">
-                    <legend>Validação</legend>
-                    <input type="text" id="idNome" name="nome" placeholder="Fulano">
-                    <input type="text" id="idEmail" name="email" placeholder="fulano@nada.com">
-                    <input type="text" id="idCpf" name="cpf" placeholder="123.456.789-11">
-                    <input type="text" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
-                    <input type="text" id="idCep" name="cep" placeholder="12345-678">
-                    <input type="button" value="Enviar" onclick="validarCompra();">
-                </fieldset>
-            </center>
-        </form>
     </main>
     <center>
     <div id="carrinho-container">
         <h2>Carrinho de Compras</h2>
         <ul id="lista-carrinho"></ul>
-        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+    </div>
+        <button><a href="validar.html">Finalizar Compra</a> </button>
       </div>
-      
+    </center>
     <footer>
         <p><strong>&copy; 2023 GAME SHOP | Criado por Maicon, Arthur e Lucas Alonso.</strong></p>
     </footer>
