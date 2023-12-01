@@ -51,4 +51,8 @@ function finalizarCompra() {
     atualizarTotal(); 
   }
 
+  function gebi(id) {
+    return document.getElementById(id)
+}
+
   

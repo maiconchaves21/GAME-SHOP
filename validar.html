@@ -17,9 +17,9 @@
             if(nome.length === 0){
                 alert("Preencha o campo nome!")
             } else
-                if((nome != "a")){
+                /*if((nome != "")){
                     alert("O campo nome está incorreto!")
-                }
+                }*/
 return  
             if(email.length === 0){
                 alert("Preencha o campo email!")
@@ -36,29 +36,24 @@ return
                 }
 return  
             if(telefone.length === 0){
-                alert("Preencha o telefone nome!")
+                alert("Preencha o telefone!")
             } else
                 if((telefone != "a")){
                     alert("O campo telefone está incorreto!")
                 }
-            return
+return
             if(cep.length === 0){
                 alert("Preencha o cep nome!")
             } else
                 if((cep != "a")){
                     alert("O campo cep está incorreto!")
                 }
-                return
+return
             alert("Sucesso!")
             gebi("formTrabalho").submit()
-
-            gebi("email").style.borderColor ="red";
-
-            <a href="validar.html"></a>
         }
-
+        
     </script>
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -77,11 +72,11 @@ return
             <center>
                 <fieldset style="width:230px">
                     <legend>Validação</legend>
-                    <input type="text" id="idNome" name="nome" placeholder="Fulano">
-                    <input type="text" id="idEmail" name="email" placeholder="fulano@nada.com">
-                    <input type="text" id="idCpf" name="cpf" placeholder="123.456.789-11">
-                    <input type="text" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
-                    <input type="text" id="idCep" name="cep" placeholder="12345-678">
+                    <input type="text" id="idNome" name="nome" placeholder="Fulano" required>
+                    <input type="email" id="idEmail" name="email" placeholder="fulano@nada.com" required>
+                    <input type="number" id="idCpf" name="cpf" placeholder="123.456.789-11" pattern="\d{3}.\d{3}.\d{3}-\{2}" required>
+                    <input type="number" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000" required>
+                    <input type="number" id="idCep" name="cep" placeholder="12345-678" required>
                     <input type="button" value="Enviar" onclick="validarCompra();">
                 </fieldset>
             </center>
