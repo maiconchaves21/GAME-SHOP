@@ -16,43 +16,28 @@
 
             if(nome.length === 0){
                 alert("Preencha o campo nome!")
-            } else
-                /*if((nome != "")){
-                    alert("O campo nome está incorreto!")
-                }*/
-return  
-            if(email.length === 0){
+            
+
+            if(email.length === 0)
                 alert("Preencha o campo email!")
-            } else
-                if((email != "a")){
-                    alert("O campo email está incorreto!")
-                }
-return  
-            if(cpf.length === 0){
+            
+ 
+            if(cpf.length === 0)
                 alert("Preencha o campo cpf!")
-            } else
-                if((cpf != "a")){
-                    alert("O campo cpf está incorreto!")
-                }
-return  
-            if(telefone.length === 0){
+  
+            if(telefone.length === 0)
                 alert("Preencha o telefone!")
-            } else
-                if((telefone != "a")){
-                    alert("O campo telefone está incorreto!")
-                }
-return
-            if(cep.length === 0){
+            
+
+            if(cep.length === 0)
                 alert("Preencha o cep nome!")
-            } else
-                if((cep != "a")){
-                    alert("O campo cep está incorreto!")
+            }
+                else{
+
+                    alert("Sucesso!")
+                    gebi("checkoutForm").submit()
                 }
-return
-            alert("Sucesso!")
-            gebi("formTrabalho").submit()
         }
-        
     </script>
     <title>Document</title>
 </head>
@@ -68,7 +53,9 @@ return
             </ul>
         </nav>
     </header>
-        <form id="checkoutForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <form id="checkoutForm"
+         action="http://jkorpela.fi/cgi-bin/echo.cgi" 
+         method="post">
             <center>
                 <fieldset style="width:230px">
                     <legend>Validação</legend>

@@ -3,7 +3,7 @@ function validarCompra() {
   const formData = new FormData(form);
 
   fetch("http://jkorpela.fi/cgi-bin/echo.cgi", {
-    method: "POST",
+    method: "post",
     body: formData,
   })
     .then(response => response.text())
